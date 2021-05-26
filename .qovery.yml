@@ -1,0 +1,11 @@
+---
+application:
+  name: "stream-proxy-nodejs"
+  project: "proxy"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-stream-proxy-nodejs"
+  routes:
+  - application_name: "stream-proxy-nodejs"
+    paths:
+    - "/*"
