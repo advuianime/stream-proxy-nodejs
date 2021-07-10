@@ -70,7 +70,7 @@ router.get('/', function (req, res, next) {
 			
 			res.setHeader('Content-type', 'application/octet-stream');
 			res.setHeader('Content-Transfer-Encoding', 'Binary'); 
-			//res.setHeader('Content-disposition', 'attachment; filename=video.'+data.cookies);
+			res.setHeader('Content-disposition', 'attachment; filename=video.'+data.cookies);
 			
 			var gRequest = request(url, options)
 				.on('error', function (error) {
