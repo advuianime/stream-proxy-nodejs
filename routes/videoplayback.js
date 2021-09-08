@@ -126,7 +126,7 @@ function streamData(req, res, start, length, options, url) {
     function doGetGoogleData() {
         var googleRequest;
         var countByteRecieve = 0;
-        var lengthWant = 1 * 1024 * 1024;
+        var lengthWant = 5 * 1024 * 1024;
         //var lengthWant = 128 * 1024;
         options.headers['range'] = 'bytes=' + start + '-';
         var isStopThisRequest = false;
